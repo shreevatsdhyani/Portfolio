@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html id="switchmode" class="scroll-smooth dark" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +10,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#00D1FF]">
-    <nav class="bg-white flex w-screen top-0 h-[48px] fixed">
+<body class="bg-[#00D1FF] dark:bg-[#001025]">
+    <nav class="bg-white flex w-screen top-0 h-[48px] fixed dark:bg-[#0077D9]">
         <div class="leftside1 poppins-regular text-[20px] pt-3 pl-[70px]">
             Shreevats' Portfolio
         </div>
-        <div class="rightside2 poppins-regular text-[20px] p-3 flex space-x-7 pl-[800px] cursor-pointer hover:">
-            <div class="hover:text-blue-700"><a href="#home">Home</a></div>
-            <div class="hover:text-blue-700"><a href="#aboutme">About Me</a></div>
-            <div class="hover:text-blue-700"><a href="#services">Services</a></div>
+        <div class="rightside2 poppins-regular text-[20px] p-3 flex space-x-5 pl-[737px] cursor-pointer hover:">
+            <div class="hover:text-blue-700 dark:hover:text-white"><a href="#home">Home</a></div>
+            <div class="hover:text-blue-700 dark:hover:text-white"><a href="#aboutme">About Me</a></div>
+            <div class="hover:text-blue-700 dark:hover:text-white"><a href="#services">Services</a></div>
             <!-- <div class="hover:text-blue-700"><a href=""></a>Projects</a></div> -->
-            <div class="hover:text-blue-700"><a href="#contact">Contact</a></div>
+            <div class="hover:text-blue-700 dark:hover:text-white"><a href="#contact">Contact</a></div>
+            <div>
+                <label class="switch">
+                    <input type="checkbox" >
+                    <span class="slider round" onclick="switchtheme()"></span>
+                </label>
+            </div>
         </div>
     </nav>
-    <div id="home" class="flex mt-[70px] mx-[177px]">
-        <div class="poppins-regular text-[25px] w-[638px]  text-justify pt-[18px]">
+    <div id="home" class="flex mt-[70px] mx-[177px] h-[430px] pt-5">
+        <div class="poppins-regular text-[25px] w-[638px] text-justify pt-[18px] dark:text-white">
             Welcome to my portfolio! I'm Shreevats Dhyani, a frontend web developer, researcher, UI / UX designer & AIML student. Dive into my projects where I create immersive web experiences, drive innovation, and build robust applications. Let's collaborate and shape the future together. Welcome to innovation unleashed!
             <div class="flex space-x-7 pt-[10px] ml-0 ">
                 <a href="https://www.instagram.com/shreevats.dhyani/"><img src="logo icons/icons8-instagram-100.png" alt=""></a>
@@ -37,11 +43,11 @@
             <img src="images/Programming-amico.png" alt="">
         </div>
     </div>
-    <hr id="aboutme" class="bg-white w-[1490px] mx-3 top-2">
+    <hr id="aboutme" class="h-px my-8 border-0 mx-3 bg-white dark:bg-[#0077D9]">
     <div class="flex mt-[70px] mx-[177px]">
         <div class="leftside2 text-justify text-[25px]">
-            <div class="underline text-center">About Me</div>
-            <div class=" w-[638px]">Welcome to my portfolio! I'm a creative enthusiast with a passion for innovation. Specializing in frontend web development and UI/UX design, I strive to create engaging digital experiences. As an AIML student, I'm fascinated by the world of artificial intelligence. When not coding or designing, I enjoy playing cricket and basketball. I'm constantly learning about  the latest tech advancements, fueling my curiosity and drive for knowledge. Let's connect and explore exciting possibilities together!
+            <div class="underline text-center font-semibold dark:text-[#0077D9]">About Me</div>
+            <div class=" w-[638px] dark:text-white pt-3">Welcome to my portfolio! I'm a creative enthusiast with a passion for innovation. Specializing in frontend web development and UI/UX design, I strive to create engaging digital experiences. As an AIML student, I'm fascinated by the world of artificial intelligence. When not coding or designing, I enjoy playing cricket and basketball. I'm constantly learning about  the latest tech advancements, fueling my curiosity and drive for knowledge. Let's connect and explore exciting possibilities together!
             </div>
         </div>
         <div class="rightside2 h-[431px] w-[452px] pl-[106px] ml-[77px] mt-[43px]">
@@ -49,33 +55,33 @@
         </div>
     </div>
     <div class="mt-0 mb-[70px]  mx-[177px]">
-        <div class="poppins-regular text-[25px] underline">
+        <div class="poppins-regular text-[25px] underline dark:text-[#0077D9]">
             Technologies and Tools
         </div>
-        <div class="flex space-x-7 pt-[12px] h-[100px] w-100px">
-            <img src="logo icons/html-5 1.png" alt="">
-            <img src="logo icons/css 1.png" alt="">
-            <img src="logo icons/icons8-tailwind-css-100 1.png" alt="">
-            <img src="logo icons/java-script 1.png" alt="">
-            <img src="logo icons/python 1.png" alt="">
-            <img src="logo icons/java 1.png" alt="">
-            <img src="logo icons/icons8-c-programming-100 1.png" alt="">
-            <img src="logo icons/c- 1.png" alt="">
-            <img src="logo icons/icons8-figma-100 1.png" alt="">
-            <img src="logo icons/icons8-canva-100 1.png" alt="">
+        
+        <div class="grid grid-cols-5 gap-4 pt-7">
+            <div><img src="images/html.png" alt=""></div>
+            <div><img src="images/css.png" alt=""></div>
+            <div><img src="images/tailwind css.png" alt=""></div>
+            <div><img src="images/javascript.png" alt=""></div>
+            <div><img src="images/python.png" alt=""></div>
+            <div><img src="images/java.png" alt=""></div>
+            <div><img src="images/c.png" alt=""></div>
+            <div><img src="images/cpp.png" alt=""></div>
+            <div><img src="images/figma.png" alt=""></div>
+            <div><img src="images/canva.png" alt=""></div>
+            <div><img src="images/clipchamp.png" alt=""></div>
+            <div><img src="images/vscode.png" alt=""></div>
+            <div><img src="images/intellijpng.png" alt=""></div>
+            <div><img src="images/pycharm.png" alt=""></div>
         </div>
-        <div class="flex space-x-7 pt-[20px]">
-            <img src="logo icons/icons8-microsoft-clipchamp-100 1.png" alt="">
-            <img src="logo icons/icons8-visual-studio-code-2019-100 1.png" alt="">
-            <img src="logo icons/icons8-intellij-idea-100 1.png" alt="">
-            <img src="logo icons/icons8-pycharm-100 1.png" alt="">
-        </div>
-        </div>
+
+        
     </div>
-    <hr id="services" class="bg-white w-[1490px] mx-3 top-2">
+    <hr id="services" class="h-px my-8 border-0 mx-3 bg-white dark:bg-[#0077D9]">
     <div class="flex-col my-[70px] mx-[177px]">
 
-        <div class="text-[25px] underline text-center">My Services</div>
+        <div class="text-[25px] underline text-center dark:text-[#0077D9]">My Services</div>
 
         <div class="grid grid-cols-3 gap-4 poppins-regular text-justify text-[20px]">
             <div class=" w-[370px]">
@@ -83,8 +89,8 @@
                     <img src="images/Developer activity-bro 1.png" alt="">
                 </div>
                 <div>
-                    <div class="underline text-center">Web Application Development</div>
-                    <div>As a web application developer, I thrive on turning ideas into functional and dynamic digital solutions. With expertise in coding languages and frameworks, I craft user-friendly and scalable applications. From conception to deployment, I'm dedicated to creating robust web experiences that drive innovation and solve real-world problems effectively.
+                    <div class="underline text-center dark:text-[#0077D9]">Web Application Development</div>
+                    <div class="dark:text-white">As a web application developer, I thrive on turning ideas into functional and dynamic digital solutions. With expertise in coding languages and frameworks, I craft user-friendly and scalable applications. From conception to deployment, I'm dedicated to creating robust web experiences that drive innovation and solve real-world problems effectively.
                     </div>
                 </div>
             </div>
@@ -94,8 +100,8 @@
                     <img src="images/UI-UX team-bro 1.png" alt="">
                 </div>
                 <div>
-                    <div class="underline text-center">UI / UX Designing</div>
-                    <div>As a UI/UX designer, I blend creativity with functionality to craft captivating digital experiences. With a passion for user-centric design, I specialize in creating intuitive interfaces and seamless interactions. From wireframes to prototypes, I strive to make every interaction delightful and effortless for users, enhancing their digital journey.
+                    <div class="underline text-center dark:text-[#0077D9]">UI / UX Designing</div>
+                    <div class="dark:text-white">As a UI/UX designer, I blend creativity with functionality to craft captivating digital experiences. With a passion for user-centric design, I specialize in creating intuitive interfaces and seamless interactions. From wireframes to prototypes, I strive to make every interaction delightful and effortless for users, enhancing their digital journey.
                     </div>
                 </div>
             </div>
@@ -105,55 +111,55 @@
                     <img src="images/Research paper-amico 1.png" alt="">
                 </div>
                 <div>
-                    <div class="underline text-center">Researcher </div>
-                    <div>As a dedicated researcher specializing in review papers, I meticulously explore and analyze vast bodies of literature to distill key insights and trends. With a passion for synthesizing knowledge, I craft comprehensive reviews that contribute to advancing understanding in my field, fostering innovation and informed decision-making.
+                    <div class="underline text-center dark:text-[#0077D9]">Researcher </div>
+                    <div class="dark:text-white">As a dedicated researcher specializing in review papers, I meticulously explore and analyze vast bodies of literature to distill key insights and trends. With a passion for synthesizing knowledge, I craft comprehensive reviews that contribute to advancing understanding in my field, fostering innovation and informed decision-making.
                     </div>
                 </div>
             </div>
         </div>
         
     </div>
-    <hr id="contact" class="bg-white w-[1490px] mx-3 top-[500px]">
-    <div class="flex-col mt-[70px] mx-[177px] py-7">
-        <div class="text-[25px] underline text-center">Contact</div>
+    <hr id="contact" class="h-px my-8 border-0 mx-3 bg-white dark:bg-[#0077D9]">
+    <div class="flex-col mt-[70px] mx-[177px] py-3">
+        <div class="text-[25px] underline text-center dark:text-[#0077D9]">Contact</div>
         <div class="grid grid-cols-2 gap-10 poppins-regular text-justify">
             <div>
-                <div class="text-[25px]">
+                <div class="text-[25px] dark:text-[#0077D9]">
                     Connect with me
                 </div>
-                <div class="text-[20px]">
+                <div class="text-[20px] dark:text-white">
                     If you want to know more about me or my work, or if you would just like to say hello, send me a message. I'd love to hear from you.
                 </div>
-                <div class="text-[25px] pt-7">
+                <div class="text-[25px] pt-7 dark:text-[#0077D9]">
                     Name
                 </div>
                 <div class="text-[20px] text-white">
                     <input type="text" placeholder="Enter your name" class="bg-[#1E1E1E] border border-white h-[37px] w-[500px] rounded-lg px-3 placeholder:poppins-regular">
                 </div>
-                <div class="text-[25px] pt-7">
+                <div class="text-[25px] pt-7 dark:text-[#0077D9]">
                     Email
                 </div>
                 <div class="text-[20px] text-white">
                     <input type="email" placeholder="Enter your email" class="bg-[#1E1E1E] border border-white text-white h-[37px] w-[500px] px-3 rounded-lg placeholder:poppins-regular">
                 </div>
-                <div class="text-[25px] pt-7">
+                <div class="text-[25px] pt-7 dark:text-[#0077D9]">
                     Message
                 </div>
                 <div class="text-[20px] text-white">
                     <textarea id="message" class="bg-[#1E1E1E] border border-white text-white h-[185px] w-[500px] text-[20px] rounded-lg block p-2.5 " placeholder="Enter your message" required=""></textarea>
                 </div>
                 <div class="py-2 ml-[413px]">
-                    <button class="text-[20px] p-2 rounded-lg bg-[#1E1E1E] border border-white text-white active:bg-black" onclick="alert('Response Submitted!')">Submit</button>
+                    <button class="text-[20px] p-2 rounded-lg bg-[#1E1E1E] border border-white text-white active:bg-black dark:bg-[#0077D9] dark:active:bg-black dark:hover:bg-black" onclick="alert('Response Submitted!')">Submit</button>
                 </div>
             </div>
             <div class="pt-[363px] pl-[256px]">
-                <div class="text-[25px] pl-[15px]">
+                <div class="text-[25px] pl-[15px] dark:text-[#0077D9]">
                     Email
                 </div>
-                <div class="text-[20px] pt-2 text-blue-700 pl-[15px]">
+                <div class="text-[20px] pt-2 text-blue-700 pl-[15px] dark:text-white">
                     shreevats37@gmail.com
                 </div>
-                <div class="text-[25px] pt-2 pl-[15px]">
+                <div class="text-[25px] pt-2 pl-[15px] dark:text-[#0077D9]">
                     Social
                 </div>
                 <div class="grid grid-cols-3 gap-1">
@@ -164,9 +170,26 @@
             </div>
     </div>
     </div>
-    <hr class="bg-white w-[1490px] mx-3 top-[500px]">
-    <div class="poppins-regular text-[20px] text-center py-2">
+    <hr id="contact" class="h-px my-2 border-0 mx-3 bg-white dark:bg-[#0077D9]">
+    <div class="poppins-regular text-[20px] text-center py-2 dark:text-white">
         Copyright © Shreevats Dhyani    |   Made with ❤️
     </div>
 </body>
+<script type="text/javascript">
+    let v =false;
+    function switchtheme() 
+    {
+        if (v==true) 
+        {
+            document.getElementById("switchmode").classList.add("dark");
+            v=false;
+        } 
+        else
+        {
+            document.getElementById("switchmode").classList.remove("dark");
+            v=true;
+        }
+            
+    }
+</script>
 </html>
